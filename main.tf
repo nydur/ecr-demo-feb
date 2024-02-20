@@ -1,9 +1,9 @@
 locals {
-  prefix = "rudyn-terraform"
+  prefix = "rudyn-terraform-feb"
 }
 
 resource "aws_ecr_repository" "ecr" {
-  name         = "${local.prefix}-ecr-feb20"
+  name         = "${local.prefix}-ecr"
   force_delete = true
 }
 
@@ -11,7 +11,7 @@ module "ecs" {
   source  = "terraform-aws-modules/ecs/aws"
   version = "~> 5.9.0"
 
-  cluster_name = "${local.prefix}-ecs-feb20"
+  cluster_name = "${local.prefix}-ecs"
 
   fargate_capacity_providers = {
     FARGATE = {
@@ -22,7 +22,7 @@ module "ecs" {
   }
 
   services = {
-    rudyn-ecs-httpd = { #task def and service name -> #Change
+    rudyn-ecs = { #task def and service name -> #Change
       cpu    = 512
       memory = 1024
       # Container definition(s)

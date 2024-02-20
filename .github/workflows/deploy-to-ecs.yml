@@ -6,10 +6,10 @@ on:
 
 env:            
   AWS_REGION: ap-southeast-1           
-  ECR_REPOSITORY: rudyn-terraform-ecr-feb20       
-  ECS_SERVICE: rudyn-ecs-httpd         
-  ECS_CLUSTER: rudyn-terraform-ecs-feb20                    
-  CONTAINER_NAME: ecs-sample
+  ECR_REPOSITORY: rudyn-terraform-ecr # must match info in main.tf      
+  ECS_SERVICE: rudyn-ecs # must match info in main.tf        
+  ECS_CLUSTER: rudyn-terraform-ecs # must match info in main.tf                   
+  CONTAINER_NAME: ecs-sample # must match info in main.tf
   TASKDEF: ecsdemo
                                                
 jobs:
