@@ -50,7 +50,7 @@ module "ecs_sg" {
   source  = "terraform-aws-modules/security-group/aws"
   version = "~> 5.1.0"
 
-  name        = "${local.prefix}-ecs-sg-feb20"
+  name        = "${local.prefix}-ecs-sg"
   description = "Security group for ecs"
   vpc_id      = data.aws_vpc.default.id
 
