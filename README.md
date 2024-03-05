@@ -12,7 +12,7 @@ Sample repository for assignment with practical walkthrough on Feb 20
 
 ### Step 1
 
-- Pre-requisites files of `app.py`, `requirements.txt` & `Dockerfile` already added to Github repository during coaching session on Feb 17
+Pre-requisites files of `app.py`, `requirements.txt` & `Dockerfile` already added to Github repository during coaching session on Feb 17
 
 - Terraform infrastructure onfigurations to create ECR repository, ECS cluster, & Security group for ECS service within `main.tf`
 
